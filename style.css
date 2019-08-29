@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+    background: #eee;
+    height: auto;
+}
+
+h1 {
+    font-weight: 400;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    margin: 0;
+}
+
+h2 {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-transform: capitalize;
+    margin: 0;
+    color: grey;
+}
+
+img {
+    display: block;
+    width: 100%;
+}
+
+main {
+    max-width: 1100px;
+    margin: auto;
+    box-shadow: 30px 0px 40px rgba(0, 0, 0, 0.2),
+        -30px 0px 40px rgba(0, 0, 0, 0.2);
+}
+ div .landing {
+     background: white;
+ }
+
+ div .landing-text {
+     display: flex;
+     flex: 0 1 40vw;
+     height: 50vh;
+     justify-content: center;
+     align-items: center;
+     text-align: center;
+     padding-right: 1rem;
+     padding-left: 1rem;
+ }
+
+ .landing-image {
+     background: url(./images/IMG_1328\ \(1\).jpg);
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     height: 50vh;
+     flex: 0 1 60vw;
+     margin: 0;
+ }
+
+.btn {
+  padding: 0.5rem 2rem;
+  border: 1px #ccc solid;
+  display: inline-block;
+  margin: 2rem 0 0;
+  border-radius: 50px;
+  text-decoration: none;
+  color: rgb(49, 49, 49);
+  transition: background 500ms ease;
+}
+
+.btn:hover {
+    background: #cacaca;
+}
+
+.btn-home {
+    padding: 0.5rem 2rem;
+    border: 1px #ccc solid;
+    display: inline-block;
+    margin: 2rem 0 0;
+    position: relative;
+    left: 5%;
+    bottom: 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    color: rgb(49, 49, 49);
+    transition: background 500ms ease;
+  }
+
+.btn-home:hover {
+    background: #cacaca;
+}
+
+.header {
+    padding: 1.5rem;
+    text-align: center;
+    background: #333;
+    color: #fff;
+}
+
+.header h2 {
+    border-left: dotted 1px #fff;
+    border-right: dotted 1px #fff;
+    display: inline-block;
+    padding-right:  1rem;
+    padding-left: 1rem;
+}
+
+.caption {
+    padding: 0.8rem;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    margin: auto;
+    color: #333;
+}
+
+footer h3 {
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+
+.about {
+    /* display: inline-block; */
+    background: url(/images/jenn_profile.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 50vh;
+    width: 90%;
+    flex: 0 1 60vw;
+    margin: 0;
+    position: relative;
+    margin: auto;
+    padding-bottom: 300px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.about-jenn {
+    position: absolute;
+    top: 70%;
+    left: 35%;
+    transform: translate( -50%, -50% );
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    opacity: 0.4;
+}
+
+.about-jenn:hover{
+  color: rgb(255, 255, 255);
+  opacity: 1;
+}
+
+.gallery-header {
+    position: relative;
+    left: 40%;
+    font-size: 3rem;
+    margin-bottom: 0;
+    color: #333;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.box {
+    width: 33.333vw;
+    height: 60vh;
+}
+
+.icons {
+    margin-top: 1rem; 
+    padding: 0.7rem;
+ }
+ 
+ .icons a {
+     color: rgb(78, 77, 73);
+     text-decoration: none;
+     padding: 0.4rem
+ }
+      .icons a:hover {
+        color:  rgb(121, 121, 223);
+        transition: all 0.5s ease-out;
+         }
+
+
+
+/* Screen Sizes 500px and Up */
+@media (min-width: 500px) {
+    .landing {
+        display: flex;
+        height: 100%;
+    }
+
+    .landing-text {
+        height: 100vh;
+    }
+
+    .landing-image {
+        height: 100vh;
+    }
+
+}
+
+/* Screen sizes 700px and Up */
+@media (min-width: 700px){
+    .btn {
+       padding: 1rem 3rem; 
+    }
+}
+
+@media (max-width: 700px){
+    .btn {
+       padding: 1rem 3rem; 
+    }
+    .gallery {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+    }
+
+    .box {
+        width: 100%;
+        height: 400%;    
+    }
+
+    .gallery-header {
+        position: relative;
+        left: 0%;
+        font-size: 3rem;
+        margin-bottom: 0;
+        color: #333;
+    }
+}
+
+
